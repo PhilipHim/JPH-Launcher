@@ -1,7 +1,9 @@
 import AppKit
 
 // shortcut: the app looks for the project on the Desktop, move both together if the folder moves
-let project = URL(fileURLWithPath: "/Users/philiphimmeroder/Desktop/jph/JPH Launcher")
+let project = URL(fileURLWithPath: #filePath)
+    .deletingLastPathComponent()
+    .deletingLastPathComponent()
 let python = project.appendingPathComponent(".venv/bin/python")
 let script = project.appendingPathComponent("jph_launch.py")
 let gameDir = project.appendingPathComponent("game")

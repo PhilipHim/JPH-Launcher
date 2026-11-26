@@ -24,20 +24,10 @@ Multiplayer. Die Anmeldung im offiziellen Launcher gehört Mojang und wandert ni
 
 ## Start
 
-Die App liegt neben diesem Ordner: `JPH Launcher.app`. Ordner und App zusammen lassen. Der Pfad steht fest in `mac/main.swift`.
+Der Clone ist noch keine App. `Öffnen.command` doppelklicken. Das baut die App, richtet Python ein und öffnet sie.
 
-Neu bauen, nach einer Änderung am Quelltext:
+Beim ersten Mal fragt macOS nach. Dann Rechtsklick auf die Datei und **Öffnen**.
 
-```bash
-swiftc -O -framework AppKit -o "../JPH Launcher.app/Contents/MacOS/JPHLauncher" mac/main.swift
-codesign --force --sign - "../JPH Launcher.app"
-```
+Danach liegt `JPH Launcher.app` im selben Ordner. Die kann man direkt öffnen.
 
-Python für den Start:
-
-```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-```
-
-Minecraft muss auf dem Mac schon installiert sein. Der Launcher legt seine eigene Spielkopie unter `game/` an und fasst die Welten des offiziellen Launchers nicht an.
+Minecraft muss schon auf dem Mac installiert sein. Der Launcher legt seine Spielkopie unter `game/` an und fasst die Welten des offiziellen Launchers nicht an.
