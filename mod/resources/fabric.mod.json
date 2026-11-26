@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "jph",
+  "name": "JPH Mod",
+  "version": "1.0.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["jph.JphClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": "*",
+    "minecraft": "~26.3-",
+    "java": ">=25"
+  }
+}
