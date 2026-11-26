@@ -4,30 +4,30 @@
   <img src="emblem.png" alt="JPH Launcher" width="420">
 </p>
 
-Ein Minecraft-Launcher für den Mac. Gebaut als Lernprojekt, um zu sehen, wie so ein Launcher das Spiel wirklich startet: welche Java-Version, welches Profil, welche Mods, und wo die Welt liegt.
+A Minecraft launcher for the Mac. Built as a learning project, to see how a launcher actually starts the game: which Java version, which profile, which mods, and where the world lives.
 
-Die Oberfläche ist eine eigene Mac-App. Kein Browserfenster, kein graues Panel. Schwarz, die Schrift hell, Gold nur an der Stelle, die gerade zählt.
+The window is a native Mac app. Black, light type, gold only where it matters.
 
-## Was er kann
+## What it can do
 
-- Minecraft Java starten. Eingestellt ist 26.3, mit Fabric.
-- Drei Seiten: Start, Skins, Mods.
-- Beim Start ein Ladebalken, der den echten Fortschritt aus dem Spiel-Log liest.
-- Skins wechseln zwischen dem eigenen Skin, Steve und Alex. Der Skin liegt als Resource Pack in der Welt.
-- Mods suchen und selbst entscheiden. **Add** legt einen Mod in den Ordner, **In** nimmt ihn wieder raus. Nichts ist vorausgewählt, außer dem, was der Launcher selbst braucht.
-- **JPH Mod** steht in der Mod-Liste immer oben. Im Spiel öffnet Rechts-Shift eine Liste: Flug, Geschwindigkeit, Reichweite, Velocity, Fullbright und weitere Werte, die sich einstellen lassen. Die gelten in einer Einzelspieler-Welt.
-- Einstellungen über das Zahnrad: RAM, Vollbild, Instanzen, das Log vom letzten Start, und ein Konto-Knopf.
+- Start Minecraft Java. Set up for 26.3, with Fabric.
+- Three pages: Start, Skins, Mods.
+- A loading bar on Play that reads the real progress from the game log.
+- Switch skins between your own skin, Steve, and Alex. The skin is applied as a resource pack.
+- Search mods and choose them yourself. **Add** puts a mod in the folder, **In** takes it out. Nothing is preselected except what the launcher itself needs.
+- **JPH Mod** stays at the top of the mod list. In a world, Right Shift opens a list: flight, speed, reach, velocity, fullbright, and a few more values you can set. They apply in a singleplayer world.
+- Settings behind the gear: RAM, fullscreen, instances, the log from the last launch, and an account button.
 
-## Was er nicht kann
+## What it cannot do
 
-Multiplayer. Die Anmeldung im offiziellen Launcher gehört Mojang und wandert nicht mit. JPH braucht dafür eine eigene App-Nummer, die Mojang freigibt. Der Knopf unter dem Zahnrad ist dafür vorbereitet. Solange die Nummer fehlt, bleiben echte Server zu. Dafür reicht der normale Minecraft-Launcher.
+Multiplayer. The sign-in from the official launcher belongs to Mojang and does not come along. JPH needs its own app id, approved by Mojang. The button under the gear is ready for that. Until the id exists, real servers stay closed. The official launcher still plays those.
 
 ## Start
 
-Der Clone ist noch keine App. `Öffnen.command` doppelklicken. Das baut die App, richtet Python ein und öffnet sie.
+A clone is not the app yet. Double-click `Open.command`. It builds the app, sets up Python, and opens it.
 
-Beim ersten Mal fragt macOS nach. Dann Rechtsklick auf die Datei und **Öffnen**.
+The first time, macOS asks. Right-click the file and choose **Open**.
 
-Danach liegt `JPH Launcher.app` im selben Ordner. Die kann man direkt öffnen.
+After that, `JPH Launcher.app` sits in the same folder. Open that directly.
 
-Minecraft muss schon auf dem Mac installiert sein. Der Launcher legt seine Spielkopie unter `game/` an und fasst die Welten des offiziellen Launchers nicht an.
+Minecraft has to be installed on the Mac already. The launcher keeps its own copy under `game/` and does not touch worlds from the official launcher.
